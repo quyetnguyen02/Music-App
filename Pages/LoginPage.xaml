@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="MusicApp.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MusicApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid  MaxWidth="300" MaxHeight="700">
+        <TextBlock  Text="Login " Margin="100,150,105,437" FontSize="28" Foreground="ForestGreen"/>
+        <StackPanel MaxWidth="300" MaxHeight="400"  Margin="0,205,16,235">
+            <TextBox  x:Name="email" Header="Email:"/>
+            <PasswordBox  x:Name="password" Header="Password:"/>
+            <TextBlock x:Name="checkLogin" Text="" TextWrapping="Wrap" FontSize="14" Foreground="Red" Margin="0 10" Width="275"/>
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,300,3,145" >
+            <Button Content="Login" Tag="login" Margin="30 0 0 60" Click="Button_Login"/>
+            <Button Content="Register" Tag="register" Margin="80 0 0 60" Click="Button_Register"/>
+        </StackPanel>
+
+
+
+
+
+    </Grid>
+    
+</Page>
