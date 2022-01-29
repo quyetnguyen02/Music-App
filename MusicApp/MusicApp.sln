@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicApp", "MusicApp.csproj", "{A992D3DD-C4B3-4F41-BF34-811BDEF5CBDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\ConsoleApp1\ConsoleApp1.csproj", "{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,26 +45,6 @@ Global
 		{A992D3DD-C4B3-4F41-BF34-811BDEF5CBDF}.Release|x86.ActiveCfg = Release|x86
 		{A992D3DD-C4B3-4F41-BF34-811BDEF5CBDF}.Release|x86.Build.0 = Release|x86
 		{A992D3DD-C4B3-4F41-BF34-811BDEF5CBDF}.Release|x86.Deploy.0 = Release|x86
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|ARM.Build.0 = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|ARM64.ActiveCfg = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|ARM64.Build.0 = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|x64.Build.0 = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Debug|x86.Build.0 = Debug|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|ARM.ActiveCfg = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|ARM.Build.0 = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|ARM64.ActiveCfg = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|ARM64.Build.0 = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|x64.ActiveCfg = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|x64.Build.0 = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|x86.ActiveCfg = Release|Any CPU
-		{F5D0D51F-EAF5-4349-8172-A05F7DFFAC08}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
