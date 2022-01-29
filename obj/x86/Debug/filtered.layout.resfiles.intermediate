@@ -10,5 +10,6 @@ App.xbf
 MainPage.xbf
 MusicApp.xr.xml
 Pages\LoginPage.xbf
+Pages\MainPages.xbf
 Pages\RegisterPage.xbf
 Properties\Default.rd.xml

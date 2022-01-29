@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using MusicApp.Entity;
+using MusicApp.Service;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,13 +24,32 @@ namespace MusicApp.Pages
     /// </summary>
     public sealed partial class LoginPage : Page
     {
+        private AccountService accountService = new AccountService();
+       
         public LoginPage()
         {
             this.InitializeComponent();
+           
         }
 
-        private void Button_Login(object sender, RoutedEventArgs e)
+        private async void Button_Login(object sender, RoutedEventArgs e)
         {
+            
+            var loginInformation = new LoginViewModel()
+            {
+                email = email.Text,
+                password = password.Password.ToString()
+
+            };
+
+           Credential credential = await accountService.Login(loginInformation);
+           Account account= await accountService.GetAccountInformation(credential.access_token);
+            if(account != null)
+            {
+                App.currentLogin = account;
+                this.Frame.Navigate(typeof(Pages.MainPages));
+            }
+           
 
         }
 
@@ -39,5 +60,8 @@ namespace MusicApp.Pages
             rootFrame.Navigate(typeof(Pages.RegisterPage));
 
         }
+
+
+       
     }
 }

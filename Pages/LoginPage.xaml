@@ -9,16 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid  MaxWidth="300" MaxHeight="700">
-        <TextBlock  Text="Login " Margin="100,150,105,437" FontSize="28" Foreground="ForestGreen"/>
+        <TextBlock  Text="Login " Margin="100,120,105,437" FontSize="28" Foreground="ForestGreen"/>
         <StackPanel MaxWidth="300" MaxHeight="400"  Margin="0,205,16,235">
-            <TextBox  x:Name="email" Header="Email:"/>
-            <PasswordBox  x:Name="password" Header="Password:"/>
-            <TextBlock x:Name="checkLogin" Text="" TextWrapping="Wrap" FontSize="14" Foreground="Red" Margin="0 10" Width="275"/>
+            <TextBox  x:Name="email" Header="Email:" PlaceholderText="Email"/>
+            <PasswordBox  x:Name="password" Header="Password:" PlaceholderText="Password"/>
+            
             
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,300,3,145" >
             <Button Content="Login" Tag="login" Margin="30 0 0 60" Click="Button_Login"/>
             <Button Content="Register" Tag="register" Margin="80 0 0 60" Click="Button_Register"/>
+            <ProgressRing x:Name="progress1" Margin="310,725,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
         </StackPanel>
 
 

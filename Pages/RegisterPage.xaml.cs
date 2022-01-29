@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
 using MusicApp.Service;
 using Newtonsoft.Json;
 using Windows.Foundation;
@@ -24,15 +28,28 @@ namespace MusicApp.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class RegisterPage : Page
+    public sealed partial class RegisterPage : Windows.UI.Xaml.Controls.Page
     {
         private int valiGender;
-       
-      
+        private Account account;
+        private Cloudinary cloudinary;
+        private string image;
+        private Stream fileOpen;
+        private ImageUploadResult AvatarUpload;
+
+
+
         private AccountService accountService = new AccountService();
         public RegisterPage()
         {
             this.InitializeComponent();
+             account = new Account(
+           "derrfxjxx",
+           "264153566326369",
+           "MiXlQ3uZhdp_7SxfMCkf65lAcD0");
+
+             cloudinary = new Cloudinary(account);
+            cloudinary.Api.Secure = true;
         }
        
         public bool IsNumber(string pText)
@@ -267,7 +284,8 @@ namespace MusicApp.Pages
 
 
             Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
-
+            image = file.Name;
+           fileOpen= await file.OpenStreamForReadAsync();
 
             if (file != null)
             {
@@ -299,22 +317,27 @@ namespace MusicApp.Pages
             checkValidate();
             
             ShowLoading(true);
-           
-                 var account = new Entity.Account()
-                {
-                   
-                    firstName = firstName.Text,
-                    lastName = lastName.Text,
-                    password = txtpassword.Password.ToString(),
-                    address = txtAddress.Text,
-                    gender = valiGender,
-                    phone = txtPhone.Text,
-                    avatar =txtAvatar.Text ,
-                    email = txtEmail.Text,
-                    birthday = birthday.SelectedDate.ToString(),
-                    introduction = intro.Text,
+            ImageUploadParams imageUpload = new ImageUploadParams()
+            {
+                File = new FileDescription(image, fileOpen),
+            };
 
+            AvatarUpload = await cloudinary.UploadAsync(imageUpload);
+            Debug.WriteLine(AvatarUpload);
 
+            var account = new Entity.Account()
+            {
+
+                firstName = firstName.Text,
+                lastName = lastName.Text,
+                password = txtpassword.Password.ToString(),
+                address = txtAddress.Text,
+                gender = valiGender,
+                phone = txtPhone.Text,
+                avatar = AvatarUpload.ToString(),
+                email = txtEmail.Text,
+                birthday = birthday.SelectedDate.ToString(),
+                introduction = intro.Text,
 
                 };
                
@@ -355,5 +378,7 @@ namespace MusicApp.Pages
                 }
             
         }
+
+       
     }
 }
