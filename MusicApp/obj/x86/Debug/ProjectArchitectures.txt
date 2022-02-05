@@ -1,1 +1,1 @@
-D:\FPTAPTECH\SEM3\Universal\MusicApp\MusicApp.csproj;x86
+D:\FPTAPTECH\Music-App\MusicApp\MusicApp.csproj;x86

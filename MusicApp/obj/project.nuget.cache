@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "meAIXxzRjoJLM+WDHLXXKOyPka3pyGiaa2i2A1gx705nHP/Vqh9IW7WF6oLeg3lVnHGdd68PdjQLuzXdxX8Hkg==",
+  "dgSpecHash": "fjt6G7woZ+ROI12fvqtyY+sowPhB6osXhP3TcTgZ3CSc0lbfgwtdW8XE2Tr9JcVA5gqexfi2+rQf0xcKOKKlyg==",
   "success": true,
-  "projectFilePath": "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\MusicApp.csproj",
+  "projectFilePath": "D:\\FPTAPTECH\\Music-App\\MusicApp\\MusicApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\QuyetNV\\.nuget\\packages\\cloudinarydotnet\\1.17.0\\cloudinarydotnet.1.17.0.nupkg.sha512",
     "C:\\Users\\QuyetNV\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -16,6 +16,7 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.universalwindowsplatform\\6.2.12\\microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
+    "C:\\Users\\QuyetNV\\.nuget\\packages\\microsoft.ui.xaml\\2.7.0\\microsoft.ui.xaml.2.7.0.nupkg.sha512",
     "C:\\Users\\QuyetNV\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\QuyetNV\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",

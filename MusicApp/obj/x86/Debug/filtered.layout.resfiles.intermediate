@@ -9,7 +9,10 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
 MusicApp.xr.xml
+Pages\listSongPage.xbf
 Pages\LoginPage.xbf
 Pages\MainPages.xbf
 Pages\RegisterPage.xbf
+Pages\SettingPage.xbf
+Pages\UserPage.xbf
 Properties\Default.rd.xml

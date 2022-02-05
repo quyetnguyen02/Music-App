@@ -304,6 +304,18 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -753,6 +765,18 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -1382,6 +1406,18 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -2014,6 +2050,18 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -2644,6 +2692,18 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -3271,6 +3331,18 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -3903,6 +3975,18 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -4530,6 +4614,18 @@
         "build": {
           "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -5379,6 +5475,37 @@
         "ref/uap10.0.15138/mscorlib.dll",
         "ref/uap10.0.15138/netstandard.dll",
         "runtime.json"
+      ]
+    },
+    "Microsoft.UI.Xaml/2.7.0": {
+      "sha512": "dB4im13tfmMgL/V3Ei+3kD2rUF+/lTxAmR4gjJ45l577eljHfdo/KUrxpq/3I1Vp6e5GCDG1evDaEGuDxypLMg==",
+      "type": "package",
+      "path": "microsoft.ui.xaml/2.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Common.targets",
+        "build/Microsoft.UI.Xaml.props",
+        "build/MicrosoftUIXamlVersion.props",
+        "build/native/Microsoft.UI.Xaml.targets",
+        "buildTransitive/Common.targets",
+        "buildTransitive/Microsoft.UI.Xaml.props",
+        "buildTransitive/MicrosoftUIXamlVersion.props",
+        "lib/uap10.0/Design/Microsoft.UI.Xaml.Design.dll",
+        "lib/uap10.0/Microsoft.UI.Xaml.pri",
+        "lib/uap10.0/Microsoft.UI.Xaml.winmd",
+        "lib/uap10.0/Microsoft.UI.Xaml.xml",
+        "lib/uap10.0/Microsoft.UI.Xaml/Themes/Generic.xaml",
+        "license.txt",
+        "microsoft.ui.xaml.2.7.0.nupkg.sha512",
+        "microsoft.ui.xaml.nuspec",
+        "readme.txt",
+        "tools/AppX/arm/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/arm64/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/x64/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/x86/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/VisualStudioToolsManifest.xml"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -9549,6 +9676,7 @@
     "UAP,Version=v10.0.17763": [
       "CloudinaryDotNet >= 1.17.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
+      "Microsoft.UI.Xaml >= 2.7.0",
       "Newtonsoft.Json >= 13.0.1"
     ]
   },
@@ -9560,11 +9688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\MusicApp.csproj",
+      "projectUniqueName": "D:\\FPTAPTECH\\Music-App\\MusicApp\\MusicApp.csproj",
       "projectName": "MusicApp",
-      "projectPath": "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\MusicApp.csproj",
+      "projectPath": "D:\\FPTAPTECH\\Music-App\\MusicApp\\MusicApp.csproj",
       "packagesPath": "C:\\Users\\QuyetNV\\.nuget\\packages\\",
-      "outputPath": "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\obj\\",
+      "outputPath": "D:\\FPTAPTECH\\Music-App\\MusicApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9599,6 +9727,10 @@
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.12, )"
+          },
+          "Microsoft.UI.Xaml": {
+            "target": "Package",
+            "version": "[2.7.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

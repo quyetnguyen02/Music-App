@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>11c8e260-e891-417d-bdbd-0ab44039d84e</PackageIdentityName>
     <PackageIdentityPublisher>CN=QuyetNV</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\FPTAPTECH\SEM3\Universal\MusicApp\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>DC5FF16970C7DD8F34F68576DAF5775D7C7E269496E09B38320B1DA4045A1028</RegisteredManifestChecksum>
+    <LayoutDir>D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>762B94BA8ECE22FF07F6741C081E5E021C378496184912F993890F8B85F3F2E8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>11c8e260-e891-417d-bdbd-0ab44039d84e_1.0.0.0_x86__99hna678zrxwc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>11c8e260-e891-417d-bdbd-0ab44039d84e_99hna678zrxwc!App</RegisteredUserModeAppID>
     <RegisteredPackageID>11c8e260-e891-417d-bdbd-0ab44039d84e</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-29T08:51:27.872</Modified>
+      <Modified>2022-02-05T09:42:35.794</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\MusicApp.exe">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MusicApp.exe">
       <PackagePath>entrypoint\MusicApp.exe</PackagePath>
-      <Modified>2022-01-29T08:51:26.670</Modified>
+      <Modified>2022-02-05T09:42:33.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\QuyetNV\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
       <PackagePath>CloudinaryDotNet.dll</PackagePath>
@@ -90,82 +90,147 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-01T21:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2022-01-21T06:28:31.593</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2022-01-09T03:33:22.970</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-09T03:33:22.981</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-09T03:33:22.982</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-09T03:33:22.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-09T03:33:22.985</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-09T03:33:22.986</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-09T03:33:22.987</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\MusicApp.xr.xml">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MusicApp.xr.xml">
       <PackagePath>MusicApp.xr.xml</PackagePath>
-      <Modified>2022-01-29T08:51:26.103</Modified>
+      <Modified>2022-02-05T08:11:04.813</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-01-29T08:48:42.903</Modified>
+      <Modified>2022-02-05T09:42:33.261</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-01-29T08:48:42.904</Modified>
+      <Modified>2022-02-05T09:42:33.262</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\Pages\LoginPage.xbf">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\listSongPage.xbf">
+      <PackagePath>Pages\listSongPage.xbf</PackagePath>
+      <Modified>2022-02-05T09:42:33.262</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2022-01-29T08:51:26.178</Modified>
+      <Modified>2022-02-05T09:42:33.262</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\Pages\MainPages.xbf">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\MainPages.xbf">
       <PackagePath>Pages\MainPages.xbf</PackagePath>
-      <Modified>2022-01-29T08:48:42.904</Modified>
+      <Modified>2022-02-05T09:42:33.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\Pages\RegisterPage.xbf">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\RegisterPage.xbf">
       <PackagePath>Pages\RegisterPage.xbf</PackagePath>
-      <Modified>2022-01-29T08:48:42.903</Modified>
+      <Modified>2022-02-05T09:42:33.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\SettingPage.xbf">
+      <PackagePath>Pages\SettingPage.xbf</PackagePath>
+      <Modified>2022-02-05T09:42:33.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\UserPage.xbf">
+      <PackagePath>Pages\UserPage.xbf</PackagePath>
+      <Modified>2022-02-05T09:42:33.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2020-12-01T21:59:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-01T19:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-01-29T08:16:04.780</Modified>
+      <Modified>2022-02-03T09:06:17.330</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\SEM3\Universal\MusicApp\bin\x86\Debug\Core\MusicApp.exe">
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Core\MusicApp.exe">
       <PackagePath>MusicApp.exe</PackagePath>
-      <Modified>2022-01-29T08:51:27.865</Modified>
+      <Modified>2022-02-05T09:42:35.779</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
+      <Modified>2021-09-14T09:06:08.000</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>Win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.29713.2</Version>

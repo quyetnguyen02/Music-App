@@ -10,17 +10,16 @@
 
     <Grid>
 
-        <NavigationView x:ConnectionId='2' x:Name="NavView">
+        <NavigationView x:ConnectionId='2' x:Name="NavView"                         
+                                                         >
 
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="My Music" Tag="listSong" Icon="Audio"  />
-
-                <NavigationViewItemSeparator/>
-                <NavigationViewItem Content="Register" Tag="register"  Icon="AddFriend" />
-                <NavigationViewItem Content="Login" Tag="login" Icon="Permissions"  />
-
+                <NavigationViewItem   Content="Account" Tag="account"  Icon="AddFriend"  />
 
             </NavigationView.MenuItems>
+
+           
             <NavigationView.AutoSuggestBox>
                 <AutoSuggestBox x:ConnectionId='3'  x:Name="NavViewSearchBox" QueryIcon="Find"/>
             </NavigationView.AutoSuggestBox>

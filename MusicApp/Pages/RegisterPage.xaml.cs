@@ -323,7 +323,7 @@ namespace MusicApp.Pages
             };
 
             AvatarUpload = await cloudinary.UploadAsync(imageUpload);
-            Debug.WriteLine(AvatarUpload);
+            Debug.WriteLine(AvatarUpload.Url);
 
             var account = new Entity.Account()
             {
@@ -334,7 +334,7 @@ namespace MusicApp.Pages
                 address = txtAddress.Text,
                 gender = valiGender,
                 phone = txtPhone.Text,
-                avatar = AvatarUpload.ToString(),
+                avatar = AvatarUpload.SecureUrl.ToString(),
                 email = txtEmail.Text,
                 birthday = birthday.SelectedDate.ToString(),
                 introduction = intro.Text,

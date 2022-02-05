@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +26,36 @@ namespace MusicApp.Pages
         public MainPages()
         {
             this.InitializeComponent();
+            this.Loaded += NavView_Loaded;
+        }
+
+
+        private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
+        {
+           ("listSong", typeof(listSongPage)),
+           ("account", typeof(UserPage)),
+        };
+
+
+        private void NavView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            if (args.IsSettingsInvoked)
+            {
+                MainContent.Navigate(typeof(Pages.SettingPage));
+            }
+            else
+            {
+                var selectedItem = sender.SelectedItem as NavigationViewItem;
+                var item = _pages.First(p => p.Tag.Equals(selectedItem.Tag));
+                MainContent.Navigate(item.Page);
+              
+            }
+
         }
     }
 }

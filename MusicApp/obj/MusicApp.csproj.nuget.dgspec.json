@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\MusicApp.csproj": {}
+    "D:\\FPTAPTECH\\Music-App\\MusicApp\\MusicApp.csproj": {}
   },
   "projects": {
-    "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\MusicApp.csproj": {
+    "D:\\FPTAPTECH\\Music-App\\MusicApp\\MusicApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\MusicApp.csproj",
+        "projectUniqueName": "D:\\FPTAPTECH\\Music-App\\MusicApp\\MusicApp.csproj",
         "projectName": "MusicApp",
-        "projectPath": "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\MusicApp.csproj",
+        "projectPath": "D:\\FPTAPTECH\\Music-App\\MusicApp\\MusicApp.csproj",
         "packagesPath": "C:\\Users\\QuyetNV\\.nuget\\packages\\",
-        "outputPath": "D:\\FPTAPTECH\\SEM3\\Universal\\MusicApp\\obj\\",
+        "outputPath": "D:\\FPTAPTECH\\Music-App\\MusicApp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -46,6 +46,10 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.12, )"
+            },
+            "Microsoft.UI.Xaml": {
+              "target": "Package",
+              "version": "[2.7.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

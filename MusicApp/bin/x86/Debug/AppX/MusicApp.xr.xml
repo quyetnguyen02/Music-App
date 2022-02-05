@@ -8,9 +8,9 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="MaxHeight" />
-      <RootProperty Name="Children" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Margin" />
       <RootMethod Name="GetRowSpan" />
@@ -27,7 +27,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="TextAlignment" />
     </RootType>
+    <RootType FullName="MusicApp.Pages.listSongPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="MaxHeight" />
@@ -75,13 +77,14 @@
       <RootProperty Name="MenuItems" />
       <RootProperty Name="AutoSuggestBox" />
       <RootProperty Name="Content" />
+      <RootEvent Name="Loaded" />
+      <RootEvent Name="ItemInvoked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItem">
       <RootProperty Name="Content" />
       <RootProperty Name="Tag" />
       <RootProperty Name="Icon" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItemSeparator" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="QueryIcon" />
     </RootType>
@@ -117,5 +120,13 @@
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="MusicApp.Pages.RegisterPage" />
+    <RootType FullName="MusicApp.Pages.SettingPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PersonPicture">
+      <RootProperty Name="ProfilePicture" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="MusicApp.Pages.UserPage" />
   </Roots.RootTypes>
 </Roots>
