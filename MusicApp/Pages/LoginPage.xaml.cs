@@ -50,6 +50,7 @@ namespace MusicApp.Pages
                 this.Frame.Navigate(typeof(Pages.MainPages));
             }
            
+           
 
         }
 

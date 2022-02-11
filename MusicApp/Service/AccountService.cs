@@ -127,5 +127,17 @@ namespace MusicApp.Service
            
             
         }
+
+        public async void logOut()
+        {
+           
+                StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+                StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
+                 storageFile.DeleteAsync();
+                
+
+            
+           
+        }
     }
 }

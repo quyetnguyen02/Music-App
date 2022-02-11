@@ -106,6 +106,9 @@
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\CreateSongPage.xbf">
+      <PackagePath>Pages\CreateSongPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\listSongPage.xbf">
       <PackagePath>Pages\listSongPage.xbf</PackagePath>
     </AppxPackagedFile>

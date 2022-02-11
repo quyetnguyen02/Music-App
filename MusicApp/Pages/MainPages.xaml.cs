@@ -39,6 +39,7 @@ namespace MusicApp.Pages
 
         private void NavView_Loaded(object sender, RoutedEventArgs e)
         {
+            MainContent.Navigate(typeof(Pages.listSongPage));
 
         }
 

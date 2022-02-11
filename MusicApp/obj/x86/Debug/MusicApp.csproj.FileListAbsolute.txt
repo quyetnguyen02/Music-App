@@ -161,3 +161,8 @@ D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\UserPage.g.i.cs
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\UserPage.g.cs
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\UserPage.xaml
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\UserPage.xbf
+D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\CreateSongPage.xbf
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\CreateSongPage.g.i.cs
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\CreateSongPage.g.cs
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\CreateSongPage.xaml
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\CreateSongPage.xbf

@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
+using MusicApp.Service;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -24,10 +26,14 @@ namespace MusicApp.Pages
     /// </summary>
     public sealed partial class UserPage : Page
     {
+        private AccountService accountService;
+        private object rootFrame;
+
         public UserPage()
         {
             this.InitializeComponent();
             Loaded += UserPage_Loaded;
+            this.accountService = new AccountService();
         }
 
         private void UserPage_Loaded(object sender, RoutedEventArgs e)
@@ -60,5 +66,28 @@ namespace MusicApp.Pages
 
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ContentDialog contentDialog = new ContentDialog();
+            contentDialog.Title = "THong bao";
+            contentDialog.Content = "xac nhan log out";
+            contentDialog.PrimaryButtonText = "Yes";
+            contentDialog.CloseButtonText = "No";
+            contentDialog.ShowAsync();
+
+            contentDialog.PrimaryButtonClick += ContentDialog_PrimaryButtonClickAsync;
+
+
+        }
+
+        private  void ContentDialog_PrimaryButtonClickAsync(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+        {
+            accountService.logOut();
+
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(Pages.LoginPage));
+        }  
+               
     }
 }
