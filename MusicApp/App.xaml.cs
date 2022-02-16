@@ -26,6 +26,7 @@ namespace MusicApp
     {
         private AccountService accountService;
         public static Account currentLogin;
+        public static Credential currentCredential;
        
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code

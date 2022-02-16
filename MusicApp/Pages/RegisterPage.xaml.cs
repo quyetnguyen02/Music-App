@@ -37,9 +37,7 @@ namespace MusicApp.Pages
         private Stream fileOpen;
         private ImageUploadResult AvatarUpload;
 
-
-
-        private AccountService accountService = new AccountService();
+     private AccountService accountService = new AccountService();
         public RegisterPage()
         {
             this.InitializeComponent();
@@ -104,12 +102,10 @@ namespace MusicApp.Pages
 
                 }
             }
-            
-           
-               
+      
         }
-
-      private void checkValidate()
+        
+        private void checkValidate()
         {
            
             //check validate
@@ -127,24 +123,26 @@ namespace MusicApp.Pages
             if (String.IsNullOrEmpty(fname))
             {
                 checkFirstName.Text = "Please Enter the First Name!";
-
+              
+               
             }
             else
             {
                 checkFirstName.Text = "";
-
+              
+                
             }
 
             //lname
             if (String.IsNullOrEmpty(lname))
             {
                 checkLastName.Text = "Please Enter the Last Name!";
-
+               
             }
             else
             {
                 checkLastName.Text = "";
-
+               
             }
 
 
@@ -152,31 +150,34 @@ namespace MusicApp.Pages
             if (String.IsNullOrEmpty(password))
             {
                 checkPassword.Text = "Please Enter the Password!";
-
+                
             }
             else if (password.Length < 8)
             {
                 checkPassword.Text = "Password must contains least 8 characters";
-
+               
             }
             else
             {
                 checkPassword.Text = "";
-
+               
             }
 
             //check password confirm
             if (String.IsNullOrEmpty(passwordConfirm))
             {
                 checkPassConfirm.Text = "Please Enter the Password Confirm!";
+              
             }
             else if(passwordConfirm != password)
             {
                 checkPassConfirm.Text = "passwordConfirm does not match Password";
+               
             }
             else
             {
                 checkPassConfirm.Text = "";
+                
             }
 
 
@@ -184,96 +185,82 @@ namespace MusicApp.Pages
             if (String.IsNullOrEmpty(address))
             {
                 checkAddress.Text = "Please Enter the Address!";
-
+               
             }
             else
             {
                 checkAddress.Text = "";
-
+              
             }
 
             //phone
             if (String.IsNullOrEmpty(phone))
             {
                 checkPhone.Text = "Please Enter the Phone!";
-
+              
             }
             else if (IsNumber(phone) == false)
             {
                 checkPhone.Text = "Please Enter the numbers!";
-
+              
             }
             else if (checkPhoneNumber(phone) == false)
             {
                 checkPhone.Text = "Phone number with 10 to 12 digits!";
-
+                
             }
             else
             {
                 checkPhone.Text = "";
-
+               
             }
             //avatar
             if (String.IsNullOrEmpty(avatar))
             {
                 checkAvatar.Text = "Please Enter the Avatar!";
-
+              
             }
             else
             {
                 checkAvatar.Text = "";
-
+               
             }
-
             //gender
             if (valiGender == 0)
             {
-                checkGender.Text = "Please enter the Gender!";
+                checkGender.Text = "Please enter the Gender!";             
             }
             else
             {
-                checkGender.Text = "";
-            }
-            
+                checkGender.Text = "";              
+            }           
             //email
-
             if (String.IsNullOrEmpty(email))
             {
-                checkEmail.Text = "Please Enter the Email!";
-
+                checkEmail.Text = "Please Enter the Email!";               
             }
             else if (IsValidEmail(email) == false)
             {
                 checkEmail.Text = "Your email must contains @";
-
-
+              
             }
             else
             {
-                checkEmail.Text = "";
-
+                checkEmail.Text = "";             
             }
             //birthday
             if (birthday.SelectedDate == null)
             {
-                checkBirthday.Text = "Please Enter the Birthday!";
-
+                checkBirthday.Text = "Please Enter the Birthday!";            
             }
             else
             {
-                checkBirthday.Text = "";
-
+                checkBirthday.Text = "";              
             }
-
-           
+         
         }
-
-
-       
-
         private async void OpenFileAvatar(object sender, RoutedEventArgs e)
         {
-
             var picker = new Windows.Storage.Pickers.FileOpenPicker();
             picker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
             picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.PicturesLibrary;
@@ -281,18 +268,12 @@ namespace MusicApp.Pages
             picker.FileTypeFilter.Add(".jpeg");
             picker.FileTypeFilter.Add(".png");
             picker.FileTypeFilter.Add(".jfif");
-
-
-            Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
+           Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
             image = file.Name;
            fileOpen= await file.OpenStreamForReadAsync();
-
             if (file != null)
             {
-
-                txtAvatar.Text = file.Name;
-              
-
+                txtAvatar.Text = file.Name;              
             }
             else
             {
@@ -304,68 +285,57 @@ namespace MusicApp.Pages
             }
 
         }
-
         private void button_login(object sender, RoutedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
 
             rootFrame.Navigate(typeof(Pages.LoginPage));
         }
-
         private async void button_Register(object sender, RoutedEventArgs e)
         {
             checkValidate();
-            
-            ShowLoading(true);
-            ImageUploadParams imageUpload = new ImageUploadParams()
+            if (String.IsNullOrEmpty(checkAvatar.Text))
             {
-                File = new FileDescription(image, fileOpen),
-            };
-
-            AvatarUpload = await cloudinary.UploadAsync(imageUpload);
-            Debug.WriteLine(AvatarUpload.Url);
-
-            var account = new Entity.Account()
-            {
-
-                firstName = firstName.Text,
-                lastName = lastName.Text,
-                password = txtpassword.Password.ToString(),
-                address = txtAddress.Text,
-                gender = valiGender,
-                phone = txtPhone.Text,
-                avatar = AvatarUpload.SecureUrl.ToString(),
-                email = txtEmail.Text,
-                birthday = birthday.SelectedDate.ToString(),
-                introduction = intro.Text,
-
+                ShowLoading(true);
+                ImageUploadParams imageUpload = new ImageUploadParams()
+                {
+                    File = new FileDescription(image, fileOpen),
                 };
-               
+                AvatarUpload = await cloudinary.UploadAsync(imageUpload);
+                Debug.WriteLine(AvatarUpload.Url);
+                var account = new Entity.Account()
+                {
+                    firstName = firstName.Text,
+                    lastName = lastName.Text,
+                    password = txtpassword.Password.ToString(),
+                    address = txtAddress.Text,
+                    gender = valiGender,
+                    phone = txtPhone.Text,
+                    avatar = AvatarUpload.SecureUrl.ToString(),
+                    email = txtEmail.Text,
+                    birthday = birthday.SelectedDate.ToString(),
+                    introduction = intro.Text,
+                };
                 var result = await accountService.Register(account);
-              ShowLoading(false);
+                ShowLoading(false);
                 ContentDialog contentDialog = new ContentDialog();
-               if (result)
-               {
-                contentDialog.Title = "action success";
-                contentDialog.Content = "Register success";
+                if (result)
+                {
+                    contentDialog.Title = "action success";
+                    contentDialog.Content = "Register success";
                 }
                 else
-                 {
-                contentDialog.Title = "action fails";
-                contentDialog.Content = "Register fails";
-                 }
-               
-               
+                {
+                    contentDialog.Title = "action fails";
+                    contentDialog.Content = "Register fails";
+                }
                 contentDialog.CloseButtonText = "OK";
                 contentDialog.ShowAsync();
-            
-          
-        }
-
+            }
+         }
         private void ShowLoading( bool load)
         {
-           
-            
+
                 if (load)
                 {
                     progress1.IsActive = true;
@@ -375,10 +345,7 @@ namespace MusicApp.Pages
                 {
                     progress1.IsActive = false;
                     progress1.Visibility = Visibility.Collapsed;
-                }
-            
-        }
-
-       
+                }   
+        }  
     }
 }

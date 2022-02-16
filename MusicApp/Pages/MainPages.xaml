@@ -14,7 +14,9 @@
                         ItemInvoked="NavView_ItemInvoked">
 
             <NavigationView.MenuItems>
-                <NavigationViewItem Content="My Music" Tag="listSong" Icon="Audio"  />
+                <NavigationViewItem Content="All Songs" Tag="allSongs" Icon="Audio"  />
+                <NavigationViewItem Content="My Song" Tag="mySong" Icon="Audio"  />
+                <NavigationViewItem Content="Create Song" Tag="createSong" Icon="Add"  />
                 <NavigationViewItem   Content="Account" Tag="account"  Icon="AddFriend"  />
                
               

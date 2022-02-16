@@ -43,15 +43,24 @@ namespace MusicApp.Pages
             };
 
            Credential credential = await accountService.Login(loginInformation);
-           Account account= await accountService.GetAccountInformation(credential.access_token);
-            if(account != null)
+            if(credential == null)
             {
-                App.currentLogin = account;
-                this.Frame.Navigate(typeof(Pages.MainPages));
+                ContentDialog contentDialog = new ContentDialog();
+                contentDialog.Title = "Login Fail";
+                contentDialog.Content = "Incorrect Email or Password";
+                contentDialog.CloseButtonText = "OK";
+                contentDialog.ShowAsync();
+                Frame.Navigate(typeof(Pages.LoginPage));
             }
-           
-           
-
+            else
+            {
+                Account account = await accountService.GetAccountInformation(credential.access_token);
+                if (account != null)
+                {
+                    App.currentLogin = account;
+                    this.Frame.Navigate(typeof(Pages.MainPages));
+                }
+            }
         }
 
         private void Button_Register(object sender, RoutedEventArgs e)  

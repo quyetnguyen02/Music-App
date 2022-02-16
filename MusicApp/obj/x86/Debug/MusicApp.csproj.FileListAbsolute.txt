@@ -166,3 +166,13 @@ D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\CreateSongPage.g.i.cs
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\CreateSongPage.g.cs
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\CreateSongPage.xaml
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\CreateSongPage.xbf
+D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\MySongPage.xbf
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\MySongPage.g.i.cs
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\MySongPage.g.cs
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\MySongPage.xaml
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Pages\MySongPage.xbf
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\Microsoft.AspNetCore.Http.Abstractions\en-US\Microsoft.AspNetCore.Http.Abstractions.Resources.resw
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\FxResources.Microsoft.Extensions.DependencyInjection.Abstractions.SR.resw
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\FxResources.Microsoft.Extensions.Options.SR.resw
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\FxResources.Microsoft.Extensions.Primitives.SR.resw
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\FxResources.System.Text.Encodings.Web.SR.resw

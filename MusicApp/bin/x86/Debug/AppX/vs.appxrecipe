@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>762B94BA8ECE22FF07F6741C081E5E021C378496184912F993890F8B85F3F2E8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>CB73273B4AAEB4F65C87A9A5DD98C7233975881D6A195470C7E033B016215371</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>11c8e260-e891-417d-bdbd-0ab44039d84e_1.0.0.0_x86__99hna678zrxwc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>11c8e260-e891-417d-bdbd-0ab44039d84e_99hna678zrxwc!App</RegisteredUserModeAppID>
     <RegisteredPackageID>11c8e260-e891-417d-bdbd-0ab44039d84e</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-08T08:35:50.506</Modified>
+      <Modified>2022-02-16T15:57:44.396</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MusicApp.exe">
       <PackagePath>entrypoint\MusicApp.exe</PackagePath>
-      <Modified>2022-02-08T08:35:48.123</Modified>
+      <Modified>2022-02-16T15:57:42.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\QuyetNV\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
       <PackagePath>CloudinaryDotNet.dll</PackagePath>
@@ -90,83 +90,222 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-01T21:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2022-01-21T06:28:31.593</Modified>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:06:31.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\BadgeLogo.scale-125.png">
+      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:06:31.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\BadgeLogo.scale-150.png">
+      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:06:31.852</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:06:31.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:06:31.959</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:13:56.687</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:13:56.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:13:56.973</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:13:57.916</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.455</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.488</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.627</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.523</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.557</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.244</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.321</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:43.756</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:43.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:43.846</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:43.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-15T12:15:44.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2022-01-09T03:33:22.970</Modified>
+      <Modified>2022-02-14T07:42:14.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-09T03:33:22.981</Modified>
+      <Modified>2022-02-15T12:13:57.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-09T03:33:22.982</Modified>
+      <Modified>2022-02-14T07:42:14.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-09T03:33:22.984</Modified>
+      <Modified>2022-02-15T12:15:43.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-09T03:33:22.985</Modified>
+      <Modified>2022-02-15T12:15:44.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-09T03:33:22.986</Modified>
+      <Modified>2022-02-14T07:42:14.901</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-09T03:33:22.987</Modified>
+      <Modified>2022-02-14T07:42:14.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2022-02-14T07:42:14.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MusicApp.xr.xml">
       <PackagePath>MusicApp.xr.xml</PackagePath>
-      <Modified>2022-02-08T07:41:27.471</Modified>
+      <Modified>2022-02-16T14:19:06.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.766</Modified>
+      <Modified>2022-02-16T15:57:42.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.767</Modified>
+      <Modified>2022-02-16T15:57:42.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\CreateSongPage.xbf">
       <PackagePath>Pages\CreateSongPage.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.767</Modified>
+      <Modified>2022-02-16T15:57:42.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\listSongPage.xbf">
       <PackagePath>Pages\listSongPage.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.767</Modified>
+      <Modified>2022-02-16T15:57:42.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.767</Modified>
+      <Modified>2022-02-16T15:57:42.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\MainPages.xbf">
       <PackagePath>Pages\MainPages.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.768</Modified>
+      <Modified>2022-02-16T15:57:42.663</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\MySongPage.xbf">
+      <PackagePath>Pages\MySongPage.xbf</PackagePath>
+      <Modified>2022-02-16T15:57:42.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\RegisterPage.xbf">
       <PackagePath>Pages\RegisterPage.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.758</Modified>
+      <Modified>2022-02-16T15:57:42.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\SettingPage.xbf">
       <PackagePath>Pages\SettingPage.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.768</Modified>
+      <Modified>2022-02-16T15:57:42.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\UserPage.xbf">
       <PackagePath>Pages\UserPage.xbf</PackagePath>
-      <Modified>2022-02-08T08:35:47.768</Modified>
+      <Modified>2022-02-16T15:57:42.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -178,11 +317,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-07T08:22:09.777</Modified>
+      <Modified>2022-02-15T13:07:23.120</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Core\MusicApp.exe">
       <PackagePath>MusicApp.exe</PackagePath>
-      <Modified>2022-02-08T08:35:50.477</Modified>
+      <Modified>2022-02-16T15:57:44.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

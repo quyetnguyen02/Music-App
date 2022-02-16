@@ -51,15 +51,11 @@ namespace MusicApp.Service
                 }
                 else
                 {
-                    ContentDialog contentDialog = new ContentDialog();
-                    contentDialog.Title = "Login Fail";
-                    contentDialog.Content = "Incorrect Email or Password";
-                    contentDialog.CloseButtonText = "OK";
-                    contentDialog.ShowAsync();
-
+                    return null;
                 }
+              
             }
-            return null;
+           
         }
 
         public async Task<Account> GetLoggedAccountAsync()
@@ -70,6 +66,7 @@ namespace MusicApp.Service
             {
                 return null;
             }
+            App.currentCredential = credential;
             account= await GetAccountInformation(credential.access_token);
         
                return account;
@@ -134,10 +131,7 @@ namespace MusicApp.Service
                 StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
                 StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
                  storageFile.DeleteAsync();
-                
-
-            
-           
+                          
         }
     }
 }

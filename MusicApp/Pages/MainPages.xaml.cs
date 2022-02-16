@@ -32,7 +32,9 @@ namespace MusicApp.Pages
 
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
         {
-           ("listSong", typeof(listSongPage)),
+           ("allSongs", typeof(listSongPage)),
+           ("mySong", typeof(MySongPage)),
+           ("createSong", typeof(CreateSongPage)),
            ("account", typeof(UserPage)),
         };
 

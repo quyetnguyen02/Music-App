@@ -54,8 +54,17 @@
 
                 
             </ListView>
-            <MediaPlayerElement x:ConnectionId='8' x:Name="MyMediaPlayer" AreTransportControlsEnabled="True" AutoPlay="False" />
-         
+            <MediaPlayerElement x:ConnectionId='8' x:Name="MyMediaPlayer" AreTransportControlsEnabled="True" AutoPlay="False" >
+                <MediaPlayerElement.TransportControls>
+                    <MediaTransportControls  IsFullWindowButtonVisible="False"
+                                            IsNextTrackButtonVisible="True"
+                                            IsPreviousTrackButtonVisible="True"
+                                            IsZoomButtonVisible="False">
+
+                    </MediaTransportControls>
+                </MediaPlayerElement.TransportControls>
+            </MediaPlayerElement>
+
         </StackPanel>
         
     </ScrollViewer>
