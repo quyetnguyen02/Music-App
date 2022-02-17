@@ -34,8 +34,7 @@ namespace MusicApp.Pages
         int indexSong;
         MediaPlaybackList _mediaPlaybackList;
         public listSongPage()
-        {
-            
+        {          
             this.InitializeComponent();
             this.songService = new SongService();
             Loaded += ListSongPage_LoadedAsync;
@@ -58,7 +57,6 @@ namespace MusicApp.Pages
             MyListSong.ItemsSource = observabSongs;
             //MyListSong.SelectedIndex = 3;
             _mediaPlaybackList = new MediaPlaybackList();
-
             for (int i = 0; i < list.Count; i++)
             {
                 try
@@ -71,16 +69,11 @@ namespace MusicApp.Pages
                     var mediaItemNull = new MediaPlaybackItem(MediaSource.CreateFromUri(new Uri("about:blank")));
                     _mediaPlaybackList.Items.Add(mediaItemNull);
                 }
-
             }
             _mediaPlaybackList.CurrentItemChanged += MediaPlaybackList_CurrentItemChanged;
-
-
             var _mediaPlayer = new MediaPlayer();
             _mediaPlayer.Source = _mediaPlaybackList; // MediaPlayerElement < MediaPlayer < MediaPlaybackList < MediaPlaybackItem
             MyMediaPlayer.SetMediaPlayer(_mediaPlayer);
-
-
         }
         private async void MediaPlaybackList_CurrentItemChanged(MediaPlaybackList sender, CurrentMediaPlaybackItemChangedEventArgs args)
         {

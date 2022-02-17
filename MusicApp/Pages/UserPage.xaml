@@ -30,7 +30,7 @@
         <TextBlock  HorizontalAlignment="Left" Margin="468,414,0,0" Text="Birthday :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
         <TextBlock x:Name="txtBirthday" HorizontalAlignment="Left" Margin="630,414,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69" />
 
-        <Button Click="Button_Click" Content="Log Out" Margin="665,500,0,0" VerticalAlignment="Top"/>
+        <Button Click="Button_Click" Content="Log Out" Margin="665,500,0,0" VerticalAlignment="Top" Width="138"/>
 
     </Grid>
 </Page>

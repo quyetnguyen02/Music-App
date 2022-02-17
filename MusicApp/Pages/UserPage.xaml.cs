@@ -28,15 +28,13 @@ namespace MusicApp.Pages
     {
         private AccountService accountService;
         private object rootFrame;
-
         public UserPage()
         {
             this.InitializeComponent();
             Loaded += UserPage_Loaded;
             this.accountService = new AccountService();
         }
-
-        private void UserPage_Loaded(object sender, RoutedEventArgs e)
+      private void UserPage_Loaded(object sender, RoutedEventArgs e)
         {
             txtFullName.Text = App.currentLogin.firstName + " " + App.currentLogin.lastName;
             txtFullName1.Text= App.currentLogin.firstName + " " + App.currentLogin.lastName;
@@ -45,7 +43,6 @@ namespace MusicApp.Pages
 
             txtEmail.Text = App.currentLogin.email;
             txtPhone.Text = App.currentLogin.phone;
-
             switch (App.currentLogin.gender)
             {
                 case 1:
@@ -57,16 +54,10 @@ namespace MusicApp.Pages
                 case 3 :
                    txtGender.Text = "Other";
                     break;
-
             }
-
             txtAddress.Text = App.currentLogin.address;
             txtBirthday.Text = App.currentLogin.birthday;
-
-
-
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ContentDialog contentDialog = new ContentDialog();
@@ -75,16 +66,11 @@ namespace MusicApp.Pages
             contentDialog.PrimaryButtonText = "Yes";
             contentDialog.CloseButtonText = "No";
             contentDialog.ShowAsync();
-
             contentDialog.PrimaryButtonClick += ContentDialog_PrimaryButtonClickAsync;
-
-
         }
-
         private  void ContentDialog_PrimaryButtonClickAsync(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
             accountService.logOut();
-
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(Pages.LoginPage));
         }  

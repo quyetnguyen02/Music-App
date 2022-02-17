@@ -31,17 +31,13 @@ namespace MusicApp.Pages
             this.InitializeComponent();
            
         }
-
         private async void Button_Login(object sender, RoutedEventArgs e)
-        {
-            
+        {            
             var loginInformation = new LoginViewModel()
             {
                 email = email.Text,
                 password = password.Password.ToString()
-
             };
-
            Credential credential = await accountService.Login(loginInformation);
             if(credential == null)
             {
@@ -62,16 +58,11 @@ namespace MusicApp.Pages
                 }
             }
         }
-
         private void Button_Register(object sender, RoutedEventArgs e)  
         {
             Frame rootFrame = Window.Current.Content as Frame;
 
             rootFrame.Navigate(typeof(Pages.RegisterPage));
-
-        }
-
-
-       
+        }      
     }
 }

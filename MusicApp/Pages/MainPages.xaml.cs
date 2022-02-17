@@ -28,8 +28,6 @@ namespace MusicApp.Pages
             this.InitializeComponent();
             this.Loaded += NavView_Loaded;
         }
-
-
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
         {
            ("allSongs", typeof(listSongPage)),
@@ -37,14 +35,11 @@ namespace MusicApp.Pages
            ("createSong", typeof(CreateSongPage)),
            ("account", typeof(UserPage)),
         };
-
-
         private void NavView_Loaded(object sender, RoutedEventArgs e)
         {
             MainContent.Navigate(typeof(Pages.listSongPage));
 
         }
-
         private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
             if (args.IsSettingsInvoked)
@@ -58,7 +53,6 @@ namespace MusicApp.Pages
                 MainContent.Navigate(item.Page);
               
             }
-
         }
     }
 }

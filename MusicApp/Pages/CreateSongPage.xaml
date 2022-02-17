@@ -9,30 +9,84 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="615,50,0,0" Text="Create Song" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="255" FontSize="36" Foreground="#FF23E24F"/>
-        <TextBlock HorizontalAlignment="Left" Margin="536,128,0,0" Text="Name:" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="71" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="615,128,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" Height="42" FontSize="24" />
-        <TextBlock x:Name="txtErrName" Foreground="Red" HorizontalAlignment="Left" Margin="536,165,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="431" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <TextBlock HorizontalAlignment="Left" Margin="557,316,0,0" Text="Singer:" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="75" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <TextBox x:Name="txtSinger" HorizontalAlignment="Left" Margin="634,316,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" Height="42" FontSize="24" />
-        <TextBlock x:Name="txtErrSinger" Foreground="Red" HorizontalAlignment="Left" Margin="555,353,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="431" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <TextBlock HorizontalAlignment="Left" Margin="531,390,0,0" Text="Author:" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="83" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <TextBox x:Name="txtAuthor" HorizontalAlignment="Left" Margin="614,390,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" Height="42" FontSize="24" />
-        <TextBlock x:Name="txtErrAuthor" Foreground="Red" HorizontalAlignment="Left" Margin="531,432,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="431" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <TextBlock HorizontalAlignment="Left" Margin="531,390,0,0" Text="Author:" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="83" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <TextBlock HorizontalAlignment="Left" Margin="496,484,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="119" FontSize="24" RenderTransformOrigin="1.099,0.475"><Run Text="Thumbnail:"/><LineBreak/><Run/><LineBreak/><Run Text=":"/></TextBlock>
-        <TextBox x:Name="txtThumbnail" HorizontalAlignment="Left" Margin="618,484,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Height="42" FontSize="24"/>
-        <TextBlock x:Name="txtErrThumbnail" Foreground="Red" HorizontalAlignment="Left" Margin="969,484,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="429" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <Button Content="UpLoad" Margin="712,570,0,0" VerticalAlignment="Top" Height="50" Width="122" FontSize="24" Click="OpenThumbnail"/>
-        <TextBlock HorizontalAlignment="Left" Margin="557,638,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="59" FontSize="24" RenderTransformOrigin="1.099,0.475" Text="Link:"/>
-        <TextBox x:Name="txtLink" HorizontalAlignment="Left" Margin="619,638,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Height="42" FontSize="24" />
-        <TextBlock x:Name="txtErrLink" Foreground="Red" HorizontalAlignment="Center" Margin="0,690,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="429" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <Button Content="UpLoad" Margin="965,638,0,0" VerticalAlignment="Top" Height="42" Width="122" FontSize="24" Click="OpenLink"/>
-        <Button Content="Create" Margin="712,785,0,0" VerticalAlignment="Top" Height="50" Width="122" FontSize="24" Click="Create"/>
-        <TextBlock HorizontalAlignment="Left" Margin="440,206,0,0" Text="description" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="173" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
-        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="615,206,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" Height="42" FontSize="24" />
-        <TextBlock x:Name="txtErrDescription" Foreground="Red" HorizontalAlignment="Left" Margin="536,243,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="431" FontSize="24" RenderTransformOrigin="1.099,0.475"/>
+    <ScrollViewer  VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Center">
+        <Grid HorizontalAlignment="Center" Background="White" Margin="5">
+            <Border Width="800" BorderBrush="GreenYellow" BorderThickness="2" CornerRadius="40">
+                <StackPanel>
+                    <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center">
+                        <TextBlock x:Name="addTitle" Foreground="ForestGreen"   FontSize="30" Text="ADD NEW  SONG" Margin="0 5 0 10" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="40 40 0 10">
+                        <!--  name-->
+                        <StackPanel Orientation="Vertical" Margin="20 0 20 0">
+                            <TextBlock Style="{StaticResource Basic}" Text="Name :" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
 
-    </Grid>
+                                <TextBlock Style="{StaticResource Warning}" x:Name="txtErrName"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox  x:Name="txtName" Width="250" ></TextBox>
+                        </StackPanel>
+                        <!-- Singer -->
+                        <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
+                            <TextBlock Style="{StaticResource Basic}" Text="Singer :" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Style="{StaticResource Warning}" x:Name="txtErrSinger"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:Name="txtSinger" Width="250"  ></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="40 40 0 10">
+                        <!-- Author-->
+                        <StackPanel Orientation="Vertical" Margin="20 0 20 0">
+                            <TextBlock Style="{StaticResource Basic}" Text="Author :" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Style="{StaticResource Warning}" x:Name="txtErrAuthor"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:Name="txtAuthor" Width="250"   />
+                        </StackPanel>
+                        <!-- Description-->
+                        <StackPanel Orientation="Vertical" Margin="70 0 0 0">
+                            <TextBlock Style="{StaticResource Basic}" Text="Description :" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Style="{StaticResource Warning}" x:Name="txtErrDescription"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <TextBox x:Name="txtDescription" Height="100" Width="250" ></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="40 40 0 10">
+                        <!-- File MP3-->
+                        <StackPanel Orientation="Vertical" Margin="20 0 20 0 ">
+                            <TextBlock Style="{StaticResource Basic}" Text="Uploaded Song :" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Style="{StaticResource Warning}" x:Name="txtErrLink"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox x:Name="txtLink" Width="180" ></TextBox>
+                                <Button Content="Upload Image" Style="{StaticResource BasicBtn}" Click="OpenLink" Width="70"></Button>
+                            </StackPanel>
+                        </StackPanel>
+                        <!-- Thumbnail-->
+                        <StackPanel Orientation="Vertical" Margin="70 0 0 0 ">
+                            <TextBlock Style="{StaticResource Basic}" Text="Thumbnail :" Margin="10 0 80 0"/>
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Style="{StaticResource Warning}" x:Name="txtErrThumbnail"   Margin="10 0 0 0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox x:Name="txtThumbnail" Width="180" ></TextBox>
+                                <Button Content="Upload Image" Style="{StaticResource BasicBtn}" Click="OpenThumbnail" Width="70"></Button>
+                            </StackPanel>
+                            <Image x:Name="thumbnailImg" Margin="0 20 0 0" Width="250" Height="120" />
+                        </StackPanel>
+                    </StackPanel>
+                    <Button Content=" Create Song" Style="{StaticResource BasicBtn}" Click="Create" Width="158" Margin="300 0 0 200"/>
+                    <ProgressRing x:Name="progress1" Width="90" Height="90" Foreground="MediumAquamarine" Margin="10 -500 90 0" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                </StackPanel>
+            </Border>
+        </Grid>
+    </ScrollViewer>
 </Page>

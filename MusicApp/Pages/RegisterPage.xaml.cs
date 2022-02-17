@@ -48,14 +48,12 @@ namespace MusicApp.Pages
 
              cloudinary = new Cloudinary(account);
             cloudinary.Api.Secure = true;
-        }
-       
+        }      
         public bool IsNumber(string pText)
         {
             Regex regex = new Regex(@"^[-+]?[0-9]*.?[0-9]+$");
             return regex.IsMatch(pText);
         }
-
         //check phone tuwr 10-12
         public static Boolean checkPhoneNumber(string phone)
         {
@@ -63,7 +61,6 @@ namespace MusicApp.Pages
 
             return passValidation.IsMatch(phone);
         }
-
         //check email
         public static bool IsValidEmail(string email)
         {
@@ -77,7 +74,6 @@ namespace MusicApp.Pages
                 return false;
             }
         }
-
         //check gender
         private void HandleCheck(object sender, RoutedEventArgs e)
         {
@@ -99,15 +95,11 @@ namespace MusicApp.Pages
                     case "other":
                         valiGender = 3;
                         break;
-
                 }
-            }
-      
-        }
-        
-        private void checkValidate()
-        {
-           
+            }     
+        }      
+       private void checkValidate()
+        {         
             //check validate
             var fname = firstName.Text;
             var lname = lastName.Text;
@@ -116,114 +108,85 @@ namespace MusicApp.Pages
             var address = txtAddress.Text;
             var phone = txtPhone.Text;
             var avatar = txtAvatar.Text;
-            var email = txtEmail.Text;
-
-           
+            var email = txtEmail.Text;          
             //fname
             if (String.IsNullOrEmpty(fname))
             {
-                checkFirstName.Text = "Please Enter the First Name!";
-              
-               
+                checkFirstName.Text = "Please Enter the First Name!";                           
             }
             else
             {
-                checkFirstName.Text = "";
-              
-                
+                checkFirstName.Text = "";                            
             }
-
             //lname
             if (String.IsNullOrEmpty(lname))
             {
-                checkLastName.Text = "Please Enter the Last Name!";
-               
+                checkLastName.Text = "Please Enter the Last Name!";              
             }
             else
             {
-                checkLastName.Text = "";
-               
+                checkLastName.Text = "";              
             }
-
-
             //password
             if (String.IsNullOrEmpty(password))
             {
-                checkPassword.Text = "Please Enter the Password!";
-                
+                checkPassword.Text = "Please Enter the Password!";               
             }
             else if (password.Length < 8)
             {
-                checkPassword.Text = "Password must contains least 8 characters";
-               
+                checkPassword.Text = "Password must contains least 8 characters";              
             }
             else
             {
-                checkPassword.Text = "";
-               
+                checkPassword.Text = "";              
             }
-
             //check password confirm
             if (String.IsNullOrEmpty(passwordConfirm))
             {
-                checkPassConfirm.Text = "Please Enter the Password Confirm!";
-              
+                checkPassConfirm.Text = "Please Enter the Password Confirm!";             
             }
             else if(passwordConfirm != password)
             {
-                checkPassConfirm.Text = "passwordConfirm does not match Password";
-               
+                checkPassConfirm.Text = "passwordConfirm does not match Password";              
             }
             else
             {
-                checkPassConfirm.Text = "";
-                
+                checkPassConfirm.Text = "";               
             }
-
-
             //address
             if (String.IsNullOrEmpty(address))
             {
-                checkAddress.Text = "Please Enter the Address!";
-               
+                checkAddress.Text = "Please Enter the Address!";              
             }
             else
             {
-                checkAddress.Text = "";
-              
+                checkAddress.Text = "";             
             }
-
             //phone
             if (String.IsNullOrEmpty(phone))
             {
-                checkPhone.Text = "Please Enter the Phone!";
-              
+                checkPhone.Text = "Please Enter the Phone!";            
             }
             else if (IsNumber(phone) == false)
             {
-                checkPhone.Text = "Please Enter the numbers!";
-              
+                checkPhone.Text = "Please Enter the numbers!";             
             }
             else if (checkPhoneNumber(phone) == false)
             {
-                checkPhone.Text = "Phone number with 10 to 12 digits!";
-                
+                checkPhone.Text = "Phone number with 10 to 12 digits!";                
             }
             else
             {
-                checkPhone.Text = "";
-               
+                checkPhone.Text = "";              
             }
             //avatar
             if (String.IsNullOrEmpty(avatar))
             {
-                checkAvatar.Text = "Please Enter the Avatar!";
-              
+                checkAvatar.Text = "Please Enter the Avatar!";              
             }
             else
             {
-                checkAvatar.Text = "";
-               
+                checkAvatar.Text = "";              
             }
             //gender
             if (valiGender == 0)
@@ -256,8 +219,7 @@ namespace MusicApp.Pages
             else
             {
                 checkBirthday.Text = "";              
-            }
-         
+            }         
         }
         private async void OpenFileAvatar(object sender, RoutedEventArgs e)
         {
@@ -335,7 +297,6 @@ namespace MusicApp.Pages
          }
         private void ShowLoading( bool load)
         {
-
                 if (load)
                 {
                     progress1.IsActive = true;

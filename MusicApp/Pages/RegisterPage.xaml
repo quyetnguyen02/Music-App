@@ -10,7 +10,6 @@
 
     <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Center" Width="1480" Margin="0,10,0,0">
         <Grid ScrollViewer.BringIntoViewOnFocusChange="True" RenderTransformOrigin="0.5,0.5" Margin="350,0,0,0">
-
             <TextBox x:Name="firstName"  HorizontalAlignment="Left" Margin="170,74,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="150" Height="32"/>
             <TextBox x:Name="lastName" HorizontalAlignment="Left" Margin="366,74,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="150" Height="32"/>
             <TextBlock HorizontalAlignment="Left" Margin="170,47,0,0" Text="FirstName" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="82"/>
@@ -28,14 +27,10 @@
             <RadioButton x:Name="male" Content="Male" Margin="170,468,0,0" VerticalAlignment="Top" GroupName="gender" Width="120" Height="32" Checked="HandleCheck" Grid.RowSpan="3"/>
             <RadioButton x:Name="female" Content="Fermale" Margin="300,468,0,0" VerticalAlignment="Top" GroupName="gender" Height="32" Width="120" Checked="HandleCheck" Grid.RowSpan="3"/>
             <RadioButton x:Name="other" Content="Other" Margin="441,468,0,0" VerticalAlignment="Top" GroupName="gender" Height="32" Width="120" Checked="HandleCheck" Grid.RowSpan="3"/>
-
-
-
             <DatePicker x:Name="birthday" Margin="172,516,0,0" Width="348" Header="Birthday" VerticalAlignment="Top" Height="55"/>
             <TextBlock x:Name="checkFirstName" HorizontalAlignment="Left" Height="17" Margin="172,109,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red"/>
             <TextBlock x:Name="checkLastName" HorizontalAlignment="Left" Height="17" Margin="370,111,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red"/>
             <TextBlock x:Name="checkEmail" HorizontalAlignment="Left" Height="17" Margin="547,151,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Foreground="Red" />
-
             <TextBlock x:Name="checkAddress" HorizontalAlignment="Left" Height="17" Margin="547,295,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Foreground="Red" />
             <TextBlock x:Name="checkPhone" HorizontalAlignment="Left" Height="17" Margin="547,356,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red"/>
             <TextBlock HorizontalAlignment="Left" Margin="295,10,0,0" Text="Register" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="50"/>
@@ -47,13 +42,11 @@
             <TextBlock x:Name="checkGender" HorizontalAlignment="Left" Height="17" Margin="538,475,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" Foreground="Red" Grid.RowSpan="2"/>
             <TextBlock x:Name="checkBirthday" HorizontalAlignment="Left" Height="17" Margin="547,544,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Foreground="Red"/>
             <TextBlock HorizontalAlignment="Left" Margin="170,444,0,0" Text="Gender" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="53"/>
-            <Button Content="Register" Margin="230,719,0,0" VerticalAlignment="Top" Click="button_Register" Height="32" Width="70"/>
-            <Button Content="Login" Margin="385,719,0,0" VerticalAlignment="Top" Click="button_login" Height="32" Width="55"/>
-            <Button Content="File Upload" Margin="430,410,0,0" VerticalAlignment="Top" Click="OpenFileAvatar" Height="32" Width="90"/>
+            <Button Content="Register" Margin="230,719,0,0" VerticalAlignment="Top" Click="button_Register" Height="32" Width="100" FontSize="22"/>
+            <Button Content="Login" Margin="385,719,0,0" VerticalAlignment="Top" Click="button_login" Height="32" Width="92" FontSize="22"/>
+            <Button Content="File Upload" Margin="430,410,0,0" VerticalAlignment="Top" Click="OpenFileAvatar" Height="32" Width="131" FontSize="22"/>
             <TextBlock x:Name="checkPassword" HorizontalAlignment="Left" Height="17" Margin="173,232,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Foreground="Red"/>
-
             <ProgressRing x:Name="progress1" Margin="310,725,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-
         </Grid>
     </ScrollViewer>
 </Page>

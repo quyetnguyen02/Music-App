@@ -47,15 +47,12 @@ namespace MusicApp.Service
                 {
                    SaveTokenAsync(content);
                     return JsonConvert.DeserializeObject<Credential>(content);
-
                 }
                 else
                 {
                     return null;
                 }
-              
-            }
-           
+            }           
         }
 
         public async Task<Account> GetLoggedAccountAsync()
@@ -67,8 +64,7 @@ namespace MusicApp.Service
                 return null;
             }
             App.currentCredential = credential;
-            account= await GetAccountInformation(credential.access_token);
-        
+            account= await GetAccountInformation(credential.access_token);       
                return account;
         }
 
@@ -95,15 +91,12 @@ namespace MusicApp.Service
                 {
                     Account account = JsonConvert.DeserializeObject<Account>(content);
                     return account;
-
                 }
                 else
                 {
                     return null;
-
                 }
             }
-
         }
 
         private async Task<Credential> LoadToken()
@@ -112,26 +105,20 @@ namespace MusicApp.Service
             {
                 StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
                 StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
-
                 string tokenString = await FileIO.ReadTextAsync(storageFile);
                 Credential credential = JsonConvert.DeserializeObject<Credential>(tokenString);
-
                 return credential;
             }catch(Exception ex)
             {
                 return null;
-            }
-           
-            
+            }                     
         }
 
         public async void logOut()
-        {
-           
+        {           
                 StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
                 StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
-                 storageFile.DeleteAsync();
-                          
+                 storageFile.DeleteAsync();                         
         }
     }
 }

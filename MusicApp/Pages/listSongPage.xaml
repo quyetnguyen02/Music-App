@@ -17,7 +17,6 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Image Source="{x:Bind thumbnail}" MaxHeight="100" Width="150" Height="150" Stretch="Fill"/>
-
                 <StackPanel Margin="12,0,0,0" Grid.Column="1" >
                     <TextBlock Text="{x:Bind name}" FontSize="14" FontWeight="SemiBold" Style="{ThemeResource BaseTextBlockStyle}"
                         HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
@@ -37,22 +36,17 @@
     </Page.Resources>
     <ScrollViewer>
         <StackPanel>
-            
             <ListView x:Name="MyListSong"
                       SelectionMode="Single"
                      SelectionChanged="MyListSong_SelectionChanged"
-                      
                       ItemTemplate="{StaticResource SongTemplate}"
      Height="570"
-     MinWidth="0"
-     
+     MinWidth="0"  
      BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}">
 
                 <!-- Data Template Used: -->
                 <!-- The data template is bound to a custom-created data type called CustomDataObject. -->
                 <!-- The full code for the class can be found in this page's source code, but its attributes are referenced/bound below. -->
-
-                
             </ListView>
             <MediaPlayerElement x:Name="MyMediaPlayer" AreTransportControlsEnabled="True" AutoPlay="False" >
                 <MediaPlayerElement.TransportControls>
@@ -60,12 +54,9 @@
                                             IsNextTrackButtonVisible="True"
                                             IsPreviousTrackButtonVisible="True"
                                             IsZoomButtonVisible="False">
-
                     </MediaTransportControls>
                 </MediaPlayerElement.TransportControls>
             </MediaPlayerElement>
-
         </StackPanel>
-        
     </ScrollViewer>
 </Page>
