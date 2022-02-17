@@ -55,7 +55,7 @@ namespace MusicApp.Pages
         private void checkVaild()
         {
             var name = txtName.Text;
-            var description = txtErrDescription.Text;
+            var description = txtDescription.Text;
             var singer = txtSinger.Text;
             var author = txtAuthor.Text;
             var thumbnail = txtThumbnail.Text;
@@ -125,11 +125,12 @@ namespace MusicApp.Pages
             picker.FileTypeFilter.Add(".png");
             picker.FileTypeFilter.Add(".jfif");
             Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
-            image = file.Name;
-            openImage = await file.OpenStreamForReadAsync();
+          
             if (file != null)
             {
                 txtThumbnail.Text = file.Name;
+                image = file.Name;
+                openImage = await file.OpenStreamForReadAsync();
             }
             else
             {
@@ -149,11 +150,12 @@ namespace MusicApp.Pages
             picker.FileTypeFilter.Add(".mp4");
           
             Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
-            link = file.Name;
-            openLink = await file.OpenStreamForReadAsync();
+           
             if (file != null)
             {
                 txtLink.Text = file.Name;
+                link = file.Name;
+                openLink = await file.OpenStreamForReadAsync();
             }
             else
             {

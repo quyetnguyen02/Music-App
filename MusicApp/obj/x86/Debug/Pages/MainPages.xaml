@@ -12,21 +12,12 @@
 
         <NavigationView x:ConnectionId='2' x:Name="NavView"                         
                                                          >
-
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="All Songs" Tag="allSongs" Icon="Audio"  />
                 <NavigationViewItem Content="My Song" Tag="mySong" Icon="Audio"  />
                 <NavigationViewItem Content="Create Song" Tag="createSong" Icon="Add"  />
                 <NavigationViewItem   Content="Account" Tag="account"  Icon="AddFriend"  />
-               
-              
-
-
             </NavigationView.MenuItems>
-            
-
-
-
             <NavigationView.AutoSuggestBox>
                 <AutoSuggestBox x:ConnectionId='3'  x:Name="NavViewSearchBox" QueryIcon="Find"/>
             </NavigationView.AutoSuggestBox>
@@ -34,8 +25,6 @@
                 <Frame x:ConnectionId='4' x:Name="MainContent" Margin="5" Padding="5" />
             </ScrollViewer>
         </NavigationView>
-        
-
     </Grid>
 </Page>
 

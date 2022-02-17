@@ -51,8 +51,10 @@ namespace MusicApp.Pages
             else
             {
                 Account account = await accountService.GetAccountInformation(credential.access_token);
+                App.currentCredential = credential;
                 if (account != null)
                 {
+
                     App.currentLogin = account;
                     this.Frame.Navigate(typeof(Pages.MainPages));
                 }

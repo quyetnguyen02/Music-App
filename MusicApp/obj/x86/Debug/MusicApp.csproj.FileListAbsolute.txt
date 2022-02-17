@@ -100,7 +100,6 @@ D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\System.Runtime.dll
 D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\System.Text.Encodings.Web.dll
 D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\MusicApp.csproj.AssemblyReference.cache
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\App.g.i.cs
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\App.g.cs
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\MainPage.g.i.cs
@@ -176,3 +175,4 @@ D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\FxResources.Microsoft.Extensions.D
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\FxResources.Microsoft.Extensions.Options.SR.resw
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\FxResources.Microsoft.Extensions.Primitives.SR.resw
 D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\FxResources.System.Text.Encodings.Web.SR.resw
+D:\FPTAPTECH\Music-App\MusicApp\obj\x86\Debug\MusicApp.csproj.AssemblyReference.cache

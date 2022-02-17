@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-17T06:04:55.416</Modified>
+      <Modified>2022-02-17T08:41:23.427</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MusicApp.exe">
       <PackagePath>entrypoint\MusicApp.exe</PackagePath>
-      <Modified>2022-02-17T06:04:53.737</Modified>
+      <Modified>2022-02-17T08:41:21.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\QuyetNV\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
       <PackagePath>CloudinaryDotNet.dll</PackagePath>
@@ -265,47 +265,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MusicApp.xr.xml">
       <PackagePath>MusicApp.xr.xml</PackagePath>
-      <Modified>2022-02-17T05:06:53.738</Modified>
+      <Modified>2022-02-17T08:19:19.092</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.507</Modified>
+      <Modified>2022-02-17T08:41:21.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.507</Modified>
+      <Modified>2022-02-17T08:41:21.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\CreateSongPage.xbf">
       <PackagePath>Pages\CreateSongPage.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.508</Modified>
+      <Modified>2022-02-17T08:41:21.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\listSongPage.xbf">
       <PackagePath>Pages\listSongPage.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.508</Modified>
+      <Modified>2022-02-17T08:41:21.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.508</Modified>
+      <Modified>2022-02-17T08:41:21.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\MainPages.xbf">
       <PackagePath>Pages\MainPages.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.508</Modified>
+      <Modified>2022-02-17T08:41:21.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\MySongPage.xbf">
       <PackagePath>Pages\MySongPage.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.509</Modified>
+      <Modified>2022-02-17T08:41:21.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\RegisterPage.xbf">
       <PackagePath>Pages\RegisterPage.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.503</Modified>
+      <Modified>2022-02-17T08:41:21.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\SettingPage.xbf">
       <PackagePath>Pages\SettingPage.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.509</Modified>
+      <Modified>2022-02-17T08:41:21.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Pages\UserPage.xbf">
       <PackagePath>Pages\UserPage.xbf</PackagePath>
-      <Modified>2022-02-17T06:04:53.509</Modified>
+      <Modified>2022-02-17T08:41:21.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -317,11 +317,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-15T13:07:23.120</Modified>
+      <Modified>2022-02-17T08:19:20.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPTAPTECH\Music-App\MusicApp\bin\x86\Debug\Core\MusicApp.exe">
       <PackagePath>MusicApp.exe</PackagePath>
-      <Modified>2022-02-17T06:04:55.410</Modified>
+      <Modified>2022-02-17T08:41:23.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\QuyetNV\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

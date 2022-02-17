@@ -45,7 +45,7 @@ namespace MusicApp.Service
                 Debug.WriteLine($"Response {content} - {result.StatusCode}");
                 if(result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                   SaveTokenAsync(content);
+                    SaveTokenAsync(content);
                     return JsonConvert.DeserializeObject<Credential>(content);
                 }
                 else
@@ -118,7 +118,10 @@ namespace MusicApp.Service
         {           
                 StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
                 StorageFile storageFile = await storageFolder.GetFileAsync(TokenFileName);
-                 storageFile.DeleteAsync();                         
+                 storageFile.DeleteAsync();
+           
+          
+          
         }
     }
 }

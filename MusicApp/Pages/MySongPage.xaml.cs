@@ -36,14 +36,13 @@ namespace MusicApp.Pages
         {
             this.InitializeComponent();
             this.songService = new SongService();
-            this.
-            Loaded += MySongPage_LoadedAsync;
+            this.Loaded += MySongPage_LoadedAsync;
         }
         private async void MySongPage_LoadedAsync(object sender, RoutedEventArgs e)
         {
             List<Song> list = await this.songService.GetMyList();
             ObservableCollection<Song> observabSongs = new ObservableCollection<Song>(list);
-            MyListSong.ItemsSource = observabSongs;          
+            MyListSong.ItemsSource = observabSongs;
             //MyListSong.SelectedIndex = 3;
             _mediaPlaybackList = new MediaPlaybackList();
             for (int i = 0; i < list.Count; i++)
@@ -72,7 +71,7 @@ namespace MusicApp.Pages
                 MyListSong.SelectedIndex = indexSong;
             });
         }
-              private void MyListSong_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void MyListSong_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             indexSong = MyListSong.SelectedIndex;
             if (indexSong != -1)
@@ -83,7 +82,7 @@ namespace MusicApp.Pages
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            base.OnNavigatedFrom(e);
+           
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {

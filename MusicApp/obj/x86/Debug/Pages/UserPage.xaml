@@ -13,10 +13,7 @@
         <StackPanel Margin="0,10,697,565">
             <PersonPicture x:ConnectionId='9' x:Name="avatarImage" ProfilePicture="https://docs.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" Margin="0 60 100 0" Width="200" Height="300" />
             <TextBlock x:ConnectionId='10' x:Name="txtFullName1" Text="" TextWrapping="Wrap" Width="200" TextAlignment="Center" FontSize="27" Margin="0,0,100,0"/>
-
         </StackPanel>
-
-
         <TextBlock  HorizontalAlignment="Left" Margin="465,70,0,0" Text="Full Name :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
         <TextBlock x:ConnectionId='2' x:Name="txtFullName" HorizontalAlignment="Left" Margin="630,70,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69"/>
         <TextBlock  HorizontalAlignment="Left" Margin="465,138,0,0" Text="Email :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
@@ -29,9 +26,7 @@
         <TextBlock x:ConnectionId='6' x:Name="txtGender" HorizontalAlignment="Left" Margin="630,344,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69"/>
         <TextBlock  HorizontalAlignment="Left" Margin="468,414,0,0" Text="Birthday :"  TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="28" Height="64" />
         <TextBlock x:ConnectionId='7' x:Name="txtBirthday" HorizontalAlignment="Left" Margin="630,414,0,0" Text=""  TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="24" Height="69" />
-
         <Button x:ConnectionId='8'                      Content="Log Out" Margin="665,500,0,0" VerticalAlignment="Top" Width="138"/>
-
     </Grid>
 </Page>
 

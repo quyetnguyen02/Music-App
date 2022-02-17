@@ -26,14 +26,12 @@ namespace MusicApp.Service
                 if (result.StatusCode == System.Net.HttpStatusCode.Created)
                 {
                     return true;
-
                 }
                 else
                 {
                   Debug.WriteLine(content);
                     return false;
-                }
-                
+                }                
         }
 
         public async Task<List<Song>> GetListAsync() {
@@ -65,6 +63,7 @@ namespace MusicApp.Service
             using (HttpClient httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {App.currentCredential.access_token}");
+                Debug.WriteLine(App.currentCredential.access_token);
                 var result = await httpClient.GetAsync($"{ApiConfig.ApitDomain}{ApiConfig.MySongPath}");
                 var content = await result.Content.ReadAsStringAsync();
                 Debug.WriteLine($"Response {content} - {result.StatusCode}");
@@ -72,12 +71,13 @@ namespace MusicApp.Service
                 {
 
                     listSong = JsonConvert.DeserializeObject<List<Song>>(content);
+                    
 
                 }
                 else
                 {
                     Debug.WriteLine("Error 500");
-
+                    Debug.WriteLine(content);
                 }
 
             }

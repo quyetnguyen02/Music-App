@@ -61,8 +61,8 @@ namespace MusicApp.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ContentDialog contentDialog = new ContentDialog();
-            contentDialog.Title = "THong bao";
-            contentDialog.Content = "xac nhan log out";
+            contentDialog.Title = "Thông Báo";
+            contentDialog.Content = "Vui lòng xác nhận log out";
             contentDialog.PrimaryButtonText = "Yes";
             contentDialog.CloseButtonText = "No";
             contentDialog.ShowAsync();

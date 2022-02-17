@@ -231,11 +231,12 @@ namespace MusicApp.Pages
             picker.FileTypeFilter.Add(".png");
             picker.FileTypeFilter.Add(".jfif");
            Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
-            image = file.Name;
-           fileOpen= await file.OpenStreamForReadAsync();
+           
             if (file != null)
             {
-                txtAvatar.Text = file.Name;              
+                txtAvatar.Text = file.Name;
+                image = file.Name;
+                fileOpen = await file.OpenStreamForReadAsync();
             }
             else
             {
@@ -285,6 +286,7 @@ namespace MusicApp.Pages
                 {
                     contentDialog.Title = "action success";
                     contentDialog.Content = "Register success";
+                    Frame.Navigate(typeof(Pages.LoginPage));
                 }
                 else
                 {
