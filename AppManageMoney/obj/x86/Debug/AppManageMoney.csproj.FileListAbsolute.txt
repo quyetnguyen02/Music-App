@@ -1,4 +1,3 @@
-D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\AppManageMoney.csproj.AssemblyReference.cache
 D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\App.g.i.cs
 D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\App.g.cs
 D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\MainPage.g.i.cs
@@ -62,3 +61,4 @@ D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\resources.en.resfiles.i
 D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\SQLitePCL.Ext.pri.xml
 D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\ProjectArchitectures.txt
 D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424563200000000.json
+D:\FPTAPTECH\SEM3\Universal\AppManageMoney\obj\x86\Debug\AppManageMoney.csproj.AssemblyReference.cache

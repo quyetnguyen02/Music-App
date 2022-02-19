@@ -14,5 +14,9 @@ namespace AppManageMoney.Entity
         public double Money { get; set; }
         public DateTime CreatedDate { get; set; }
         public int Category { get; set; }
+
+       
+        public PersonalTransaction() { }
+
     }
 }

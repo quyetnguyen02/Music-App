@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,63 +23,51 @@ using Windows.UI.Xaml.Navigation;
 
 namespace AppManageMoney.Pages
 {
-    public class Reminder
-    {
-        public int ID { get; set; }
-        public String Name { get; set; }
-        public String Time { get; set; }
-        public bool IsActive { get; set; }
-    }
+   
+   
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class CreatePage : Page
     {
-        public List<Reminder> Reminder { get; set; }
+       
        
         private CreateService createService;
         
+        
+
         public CreatePage()
         {
             this.InitializeComponent();
             this.createService = new CreateService();
             Loaded += CreatePage_Loaded;
-            
-            Reminder = new List<Reminder>();
-            
-            
+          
+
         }
 
-        private async void CreatePage_Loaded(object sender, RoutedEventArgs e)
+        private  void CreatePage_Loaded(object sender, RoutedEventArgs e)
         {
-            List<PersonalTransaction> list= await createService.Select_Data();
-            ObservableCollection<PersonalTransaction> observabSongs = new ObservableCollection<PersonalTransaction>(list);
-
-            DataGird.ItemsSource = observabSongs;
-
-
-
+ 
+            ListData.ItemsSource = createService.SelectedData(); 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
 
         public  void create_button(object sender, RoutedEventArgs e)
         {
+            PersonalTransaction personal = new PersonalTransaction()
+            {
+                Name = Name.Text,
+                Description = Description.Text,
+                Money = Convert.ToDouble(Money.Text.ToString()),
+                CreatedDate = Convert.ToDateTime(CreatedDate.SelectedDate.ToString()),
+                Category = Convert.ToInt32(Category.Text.ToString()),
+            };
 
-            var name = Name.Text;
-            var description = Description.Text;
-            var money = Money.Text;
-            var date = CreatedDate.SelectedDate.ToString();
-            var category = Category.Text;
-
-           var result =  createService.Insert_Data(name, description, money, date, category);
+           var result =  createService.Insert_Data(personal);
             ContentDialog contentDialog = new ContentDialog();
             if (result)
-            {
-               
+            {               
                 contentDialog.Title = "THÔNG BÁO ";
                 contentDialog.Content = "Thêm thành công!";
                 contentDialog.CloseButtonText = "OK";
@@ -91,9 +80,47 @@ namespace AppManageMoney.Pages
                 contentDialog.CloseButtonText = "OK";
             }
             _ = contentDialog.ShowAsync();
+            contentDialog.CloseButtonClick += ContentDialog_CloseButtonClick;
         }
 
-      
+        private void ContentDialog_CloseButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+        {
+            ClearData();
+            ListData.ItemsSource = createService.SelectedData();
+            ListData.UpdateLayout();
 
+        }
+
+        private void ClearData()
+        {
+            Name.Text = String.Empty;
+            Description.Text = String.Empty;
+            Money.Text = String.Empty;
+           CreatedDate.SelectedDate = null;
+            Category.Text = String.Empty;
+
+        }
+
+        private void ListData_Loaded(object sender, RoutedEventArgs e)
+        {
+            ListData.ItemsSource=  createService.SelectedData();
+          
+        }
+
+        private void SearchButton(object sender, RoutedEventArgs e)
+        {
+            var searchFrom = DateFrom.SelectedDate.ToString();
+            var searchTo = DateTo.SelectedDate.ToString();
+
+            var result = createService.Search(searchFrom,searchTo);
+            if(result != null)
+            {
+                ListData.ItemsSource = result;
+                ListData.UpdateLayout();
+
+            }
+           
+           
+        }
     }
 }

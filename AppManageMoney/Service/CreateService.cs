@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,9 @@ namespace AppManageMoney.Service
     {
        
         private SQLiteConnection conn = new SQLiteConnection("sqlitepcldemo.db");
-        
-        public bool Insert_Data(string name,string description, string money , string date, string category)
+        public List<PersonalTransaction> perList;
+
+        public bool Insert_Data(PersonalTransaction personal)
         {
            
             try
@@ -21,51 +23,84 @@ namespace AppManageMoney.Service
                 using (var personstmt = conn.Prepare("INSERT INTO PersonalTransaction (Name,Description,Money,CreatedDate,Category) " +
                     "VALUES (?,?,?,?,?)"))
                 {
-                    personstmt.Bind(1, name);
-                    personstmt.Bind(2, description);
-                    personstmt.Bind(3, money);
-                    personstmt.Bind(4, date);
-                    personstmt.Bind(5, category);
+                    personstmt.Bind(1, personal.Name);
+                    personstmt.Bind(2, personal.Description);
+                    personstmt.Bind(3, personal.Money);
+                    personstmt.Bind(4, personal.CreatedDate.ToString());
+                    personstmt.Bind(5, personal.Category);
                     personstmt.Step();
                 }
                 return true;
             }
             catch (Exception ex)
             {
-                return true;
+                return false;
+            }
+        }
+        public List<PersonalTransaction> SelectedData()
+        {
+            perList = new List<PersonalTransaction>();
+            var query = "select * from PersonalTransaction;";
+            using (var stmt = conn.Prepare(query))
+            {
+                Debug.WriteLine(stmt);
+                while (stmt.Step() == SQLiteResult.ROW)
+                {
+
+                    var personal = new PersonalTransaction()
+                    {
+                        ID = Convert.ToInt32(stmt["Id"]),
+                        Name = (string)stmt["Name"],
+                        Description = (string)stmt["Description"],
+                        Money = Convert.ToDouble(stmt["Money"]),
+                        CreatedDate = Convert.ToDateTime((String)stmt["CreatedDate"]),
+                        Category = Convert.ToInt32(stmt["Category"]),
+
+                    };
+                    perList.Add(personal);
+                }
+
+                return perList;
+
             }
         }
 
-        public async Task<List<PersonalTransaction>> Select_Data()
+        public List<PersonalTransaction> Search(string searchFrom, string searchTo)
         {
-            List<PersonalTransaction> personals ;
-            using (var stt = conn.Prepare("select * from PersonalTransaction"))
+            perList = new List<PersonalTransaction>();
+            var query = "SELECT * FROM PersonalTransaction " +
+             "WHERE CreatedDate BETWEEN ? AND ? ";
+            using (var stmt = conn.Prepare(query))
+            {
+                stmt.Bind(1, searchFrom.ToString());
+                stmt.Bind(2, searchTo.ToString());
+                Debug.WriteLine(stmt);
+                while (stmt.Step() == SQLiteResult.ROW)
                 {
-                    while (stt.Step() != SQLiteResult.ROW)
+
+                    var personal = new PersonalTransaction()
                     {
+                        ID = Convert.ToInt32(stmt["Id"]),
+                        Name = (string)stmt["Name"],
+                        Description = (string)stmt["Description"],
+                        Money = Convert.ToDouble(stmt["Money"]),
+                        CreatedDate = Convert.ToDateTime((String)stmt["CreatedDate"]),
+                        Category = Convert.ToInt32(stmt["Category"]),
 
-                    personals = new List<PersonalTransaction>();
-                    personals.Add(PersonalTransaction()
-                    {
-                        ID = (int)stt["Id"],
-                            Name = (String)stt["Name"],
-                        Description = (String)stt["Description"],
-                        Money = (double)stt["Money"],
-                        CreatedDate = (DateTime)stt["CreatedDate"],
-                        Category = (int)stt["Category"],
-
-
-                    });
-
-
+                    };
+                    perList.Add(personal);
                 }
 
-                }
-            return personals;
+                return perList;
 
-
-
-
+            }
         }
+
+
+
+
     }
+
+    
+
 }
