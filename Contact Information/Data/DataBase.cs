@@ -11,11 +11,11 @@ namespace Contact_Information.Data
     {
         public static bool CreateTables()
         {
-            var conn = new SQLiteConnection("sqlitepcldemo.db");
+            var conn = new SQLiteConnection("Data.db");
             string sql = @"CREATE TABLE IF NOT EXISTS    
                            Contact (Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
                             Name VARCHAR( 140 ),                            
-                                Phone STRING);";
+                                Phone VARCHAR);";
             using (var statement = conn.Prepare(sql))
             {
                 statement.Step();

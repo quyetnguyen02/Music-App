@@ -10,7 +10,7 @@ namespace Contact_Information.Data
 {
    public class CRUD
     {
-        private SQLiteConnection conn = new SQLiteConnection("sqlitepcldemo.db");
+        private SQLiteConnection conn = new SQLiteConnection("Data.db");
         public List<Contact> conList;
         public bool Insert_Data(Contact contact)
         {
@@ -29,6 +29,23 @@ namespace Contact_Information.Data
             catch (Exception ex)
             {
                 return false;
+            }
+        }
+        public bool CheckPhone(string Phone)
+        {
+           
+            var query = "select * from Contact WHERE PHONE =?;";
+            using (var stmt = conn.Prepare(query))
+            {
+
+                while (stmt.Step() == SQLiteResult.ROW)
+                {
+
+                    return true;
+                }
+
+                return false ;
+
             }
         }
 
@@ -56,16 +73,17 @@ namespace Contact_Information.Data
             }
         }
 
-        public List<Contact> Search(string Name,string Phone)
+        public List<Contact> Search(string Name)
         {
             conList = new List<Contact>();
-            var query = "SELECT * FROM Contact " +
-             "WHERE Name ?";
+            var query = "SELECT * FROM Contact  WHERE Name=?";
             using (var stmt = conn.Prepare(query))
             {
                 stmt.Bind(1, Name.ToString());
-               
-               
+                
+
+
+
                 while (stmt.Step() == SQLiteResult.ROW)
                 {
 

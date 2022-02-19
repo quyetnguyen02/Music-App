@@ -15,17 +15,15 @@
         <TextBox x:ConnectionId='3' x:Name="txtPhone" HorizontalAlignment="Left"  Margin="170,315,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="373" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Margin="170,259,0,0" Text="Phone Number" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36"/>
 
-        <TextBlock HorizontalAlignment="Left" Margin="858,55,0,0" Text="Add Contact" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36" />
-        <TextBlock HorizontalAlignment="Left" Margin="802,108,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36"/>
-        <TextBox x:ConnectionId='4' x:Name="txtNameSearch" HorizontalAlignment="Left"  Margin="802,159,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="373" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Margin="802,259,0,0" Text="Phone Number" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36"/>
-        <TextBox x:ConnectionId='5' x:Name="txtPhoneSearch" HorizontalAlignment="Left"  Margin="802,315,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="373" FontSize="22"/>
-        <Button x:ConnectionId='6' Content="Add" Margin="191,443,0,0" VerticalAlignment="Top" Width="252" Height="57" FontSize="24"                     />
-        <Button x:ConnectionId='7' Content="Search" Margin="898,443,0,0" VerticalAlignment="Top" Width="252" Height="57" FontSize="24"                       />
+        <TextBlock HorizontalAlignment="Left" Margin="858,77,0,0" Text="Search Contact" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36" />
+        <TextBlock HorizontalAlignment="Left" Margin="810,130,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36"/>
+        <TextBox x:ConnectionId='4' x:Name="txtNameSearch" HorizontalAlignment="Left"  Margin="810,181,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="373" FontSize="22"/>
+        <Button x:ConnectionId='5' Content="Add" Margin="191,443,0,0" VerticalAlignment="Top" Width="252" Height="57" FontSize="24"                     />
+        <Button x:ConnectionId='6' Content="Search" Margin="900,287,0,0" VerticalAlignment="Top" Width="252" Height="57" FontSize="24"                       />
 
 
-       
-            <Custom:DataGrid x:ConnectionId='8'  
+
+        <Custom:DataGrid x:ConnectionId='7'  
                 x:Name="ListData" 
                
                 HorizontalAlignment="Left" 
@@ -33,7 +31,7 @@
                 VerticalAlignment="Top" 
                 Margin="35 500 0 0"
                 Width="650"/>
-        
+
     </Grid>
 
 

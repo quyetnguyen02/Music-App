@@ -45,24 +45,40 @@ namespace Contact_Information
                 Name = txtname.Text,
                 Phone=txtPhone.Text,                             
             };
-
-            var result = crud.Insert_Data(contact);
-            ContentDialog contentDialog = new ContentDialog();
-            if (result)
+            var check = crud.CheckPhone(txtPhone.Text);
+            if (check)
             {
-                contentDialog.Title = "THÔNG BÁO ";
-                contentDialog.Content = "Thêm thành công!";
-                contentDialog.CloseButtonText = "OK";
+                var result = crud.Insert_Data(contact);
+                ContentDialog contentDialog = new ContentDialog();
+                if (result)
+                {
+                    contentDialog.Title = "THÔNG BÁO ";
+                    contentDialog.Content = "Thêm thành công!";
+                    contentDialog.CloseButtonText = "OK";
 
+                }
+                else
+                {
+                    contentDialog.Title = "THÔNG BÁO ";
+                    contentDialog.Content = "Thêm thất bại  !";
+                    contentDialog.CloseButtonText = "OK";
+                }
+                _ = contentDialog.ShowAsync();
+                contentDialog.CloseButtonClick += ContentDialog_CloseButtonClick;
             }
             else
             {
-                contentDialog.Title = "THÔNG BÁO ";
-                contentDialog.Content = "Thêm thất bại  !";
-                contentDialog.CloseButtonText = "OK";
+                ContentDialog contentDialog = new ContentDialog();
+               
+                
+                    contentDialog.Title = "THÔNG BÁO ";
+                    contentDialog.Content = "abc!";
+                    contentDialog.CloseButtonText = "OK";
+
+              
+                _ = contentDialog.ShowAsync();
             }
-            _ = contentDialog.ShowAsync();
-            contentDialog.CloseButtonClick += ContentDialog_CloseButtonClick; ;
+            
         }
 
         private void ContentDialog_CloseButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
@@ -81,9 +97,9 @@ namespace Contact_Information
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             var Name = txtNameSearch.Text;
-            var Phone = txtPhoneSearch.Text;
+            
 
-            var result = crud.Search(Name, Phone);
+            var result = crud.Search(Name);
             if (result != null)
             {
                 ListData.ItemsSource = result;
