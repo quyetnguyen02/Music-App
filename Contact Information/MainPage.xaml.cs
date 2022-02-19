@@ -43,43 +43,31 @@ namespace Contact_Information
             Contact contact = new Contact()
             {
                 Name = txtname.Text,
-                Phone=txtPhone.Text,                             
+                Phone = txtPhone.Text,
             };
-            var check = crud.CheckPhone(txtPhone.Text);
-            if (check)
-            {
-                var result = crud.Insert_Data(contact);
-                ContentDialog contentDialog = new ContentDialog();
-                if (result)
-                {
-                    contentDialog.Title = "THÔNG BÁO ";
-                    contentDialog.Content = "Thêm thành công!";
-                    contentDialog.CloseButtonText = "OK";
 
-                }
-                else
-                {
-                    contentDialog.Title = "THÔNG BÁO ";
-                    contentDialog.Content = "Thêm thất bại  !";
-                    contentDialog.CloseButtonText = "OK";
-                }
-                _ = contentDialog.ShowAsync();
-                contentDialog.CloseButtonClick += ContentDialog_CloseButtonClick;
+
+            var result = crud.Insert_Data(contact);
+            ContentDialog contentDialog = new ContentDialog();
+            if (result)
+            {
+                contentDialog.Title = "THÔNG BÁO ";
+                contentDialog.Content = "Thêm thành công!";
+                contentDialog.CloseButtonText = "OK";
+
             }
             else
             {
-                ContentDialog contentDialog = new ContentDialog();
-               
-                
-                    contentDialog.Title = "THÔNG BÁO ";
-                    contentDialog.Content = "Số Điện Thoại Đã Tồn Tại!";
-                    contentDialog.CloseButtonText = "OK";
-
-              
-                _ = contentDialog.ShowAsync();
+                contentDialog.Title = "THÔNG BÁO ";
+                contentDialog.Content = "Thêm thất bại  !";
+                contentDialog.CloseButtonText = "OK";
             }
-            
+            _ = contentDialog.ShowAsync();
+            contentDialog.CloseButtonClick += ContentDialog_CloseButtonClick;
         }
+
+
+    
 
         private void ContentDialog_CloseButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
