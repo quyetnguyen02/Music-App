@@ -10,12 +10,14 @@ using CloudinaryDotNet.Actions;
 using MusicApp.Service;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage.Streams;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -131,6 +133,10 @@ namespace MusicApp.Pages
                 txtThumbnail.Text = file.Name;
                 image = file.Name;
                 openImage = await file.OpenStreamForReadAsync();
+                BitmapImage bitmapImage = new BitmapImage();
+                IRandomAccessStream fileStream = await file.OpenReadAsync();
+                await bitmapImage.SetSourceAsync(fileStream);
+                thumbnailImg.Source = bitmapImage;
             }
             else
             {
