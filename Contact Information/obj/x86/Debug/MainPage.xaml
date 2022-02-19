@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Contact_Information.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Contact_Information"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Custom="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="218,72,0,0" Text="Add Contact" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36" />
+        <TextBox x:ConnectionId='2' x:Name="txtname" HorizontalAlignment="Left"  Margin="170,181,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="373" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="170,125,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36"/>
+        <TextBox x:ConnectionId='3' x:Name="txtPhone" HorizontalAlignment="Left"  Margin="170,315,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="373" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="170,259,0,0" Text="Phone Number" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="858,55,0,0" Text="Add Contact" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36" />
+        <TextBlock HorizontalAlignment="Left" Margin="802,108,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36"/>
+        <TextBox x:ConnectionId='4' x:Name="txtNameSearch" HorizontalAlignment="Left"  Margin="802,159,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="373" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="802,259,0,0" Text="Phone Number" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="248" FontSize="36"/>
+        <TextBox x:ConnectionId='5' x:Name="txtPhoneSearch" HorizontalAlignment="Left"  Margin="802,315,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="373" FontSize="22"/>
+        <Button x:ConnectionId='6' Content="Add" Margin="191,443,0,0" VerticalAlignment="Top" Width="252" Height="57" FontSize="24"                     />
+        <Button x:ConnectionId='7' Content="Search" Margin="898,443,0,0" VerticalAlignment="Top" Width="252" Height="57" FontSize="24"                       />
+
+
+       
+            <Custom:DataGrid x:ConnectionId='8'  
+                x:Name="ListData" 
+               
+                HorizontalAlignment="Left" 
+                AutoGenerateColumns="True"
+                VerticalAlignment="Top" 
+                Margin="35 500 0 0"
+                Width="650"/>
+        
+    </Grid>
+
+
+</Page>
+
