@@ -76,10 +76,10 @@ namespace Contact_Information.Data
         public List<Contact> Search(string Name)
         {
             conList = new List<Contact>();
-            var query = "SELECT * FROM Contact  WHERE Name=?";
+            var query = "SELECT * FROM Contact  WHERE Name like ? ";
             using (var stmt = conn.Prepare(query))
             {
-                stmt.Bind(1, Name.ToString());
+                stmt.Bind(1,"%" +Name.ToString() +"%");
                 
 
 

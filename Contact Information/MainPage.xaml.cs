@@ -72,7 +72,7 @@ namespace Contact_Information
                
                 
                     contentDialog.Title = "THÔNG BÁO ";
-                    contentDialog.Content = "abc!";
+                    contentDialog.Content = "Số Điện Thoại Đã Tồn Tại!";
                     contentDialog.CloseButtonText = "OK";
 
               
